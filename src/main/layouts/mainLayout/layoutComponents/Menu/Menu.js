@@ -1,19 +1,40 @@
 import React from "react";
 import {pathSearch} from "../../../../../core/routing/path";
 import {Link} from "react-router-dom";
-
+import "./menu.css"
 
 class Menu extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isScrolling: false
+        }
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                this.setState({
+                    isScrolling: true
+                })
+            } else {
+                this.setState({
+                    isScrolling: false
+                })
+            }
+        })
+    }
+
     render() {
         return (
             <>
-                <div className="nav fixed-top text-dark text-center d-flex flex-row">
+                <div className={"nav fixed-top text-dark text-center d-flex flex-row " + (this.state.isScrolling ? "scrolled " : "")}>
                     <div className="col-md-8 mx-auto">
-                        <div className="d-flex justify-content-evenly align-items-center">
+                        <div className="d-flex justify-content-evenly align-items-center ">
                             <div className="nav-item">
-                                <a href="#" className="btn nav-link bg-transparent text-white">
+                                <Link to={pathSearch("main=>index")} className="btn nav-link bg-transparent text-white">
                                     Главная
-                                </a>
+                                </Link>
                             </div>
                             <div className="nav-item">
                                 <button className="btn nav-link text-white">

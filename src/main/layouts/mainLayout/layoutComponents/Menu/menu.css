@@ -1,0 +1,9 @@
+nav {
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.scrolled {
+    background-color: var(--navbar-background);
+    transition: background-color 0.5s ease-in-out;
+}

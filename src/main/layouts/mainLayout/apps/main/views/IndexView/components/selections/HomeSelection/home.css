@@ -1,0 +1,91 @@
+/* ------------------------------------------------------------------ */
+/* b. homeBlock Styles
+/* ------------------------------------------------------------------ */
+
+#homeBlock {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* vertically center banner section */
+#homeBlock:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#homeBlock .banner {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#homeBlock .banner-text h1 {
+    font: 70px/1em 'opensans-bold', sans-serif;
+    color: #fff;
+    margin: 0 auto 18px auto;
+}
+
+#homeBlock .banner-text h3 {
+    font: 18px/1.9em 'librebaskerville-regular', serif;
+    color: #ddd;
+}
+
+/* #homeBlock social links */
+#homeBlock .social {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+#homeBlock .social li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+}
+
+#homeBlock .social li button {
+    color: #fff;
+}
+
+.social .btn {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.social .btn i {
+    margin-right: 0.8rem;
+}
+
+.instruction-btn {
+    background-color: #419452 !important;
+    color: white;
+}
+
+.github-btn {
+    background-color: #213e8c !important;
+    color: white;
+}
+
+.github-btn:hover, .instruction-btn:hover {
+    color: #d3d3d3;
+}
+
+#homeBlock .scrolldown button {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#homeBlock .scrolldown button:hover {
+    color: #0762f9;
+}

@@ -1,54 +1,75 @@
-#resume {
-    background: #3a3a3a;
+#InfoSelection {
     padding-top: 90px;
     padding-bottom: 72px;
     overflow: hidden;
+    background: #2a2a2a;
 }
 
-#resume h1 {
+
+#InfoSelection .block:not(:first-child) {
+    margin-top: 4rem;
+}
+
+
+#InfoSelection h1 {
     font: 18px/24px 'opensans-bold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-#resume h1 span {
+#InfoSelection .block-title {
     border-bottom: 3px solid #0762f9;
     padding-bottom: 6px;
+    text-align: center;
+}
+
+#InfoSelection h3 {
+    line-height: 30px;
+    font-size: 25px;
     color: white;
 }
 
-#resume h3 {
-    font: 25px/30px 'opensans-bold', sans-serif;
-    color: white;
-}
-
-#resume .header-col {
+#InfoSelection .header-col {
     padding-top: 1.8rem;
 }
 
-#resume .main-col {
+#InfoSelection .main-col {
     padding-right: 10%;
+    text-align: left;
 }
 
-.education, .work {
-    margin-bottom: 48px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #E8E8E8;
-}
-
-#resume .info {
+#InfoSelection .author-info {
     font-size: 15px;
-    margin-bottom: 18px;
-    margin-top: 9px;
+    margin-bottom: 0.5rem;
     color: white;
 }
 
-#resume .info span {
+#InfoSelection .author-info span {
     margin-right: 5px;
     margin-left: 5px;
 }
 
-#resume .author {
+#InfoSelection .author {
     font-size: 15px;
-    margin-top: 6px;
+}
+
+.theme-texts {
+    margin-top: 1rem;
+}
+
+.info-item {}
+
+.info-item:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+.theme {}
+
+.theme:not(:last-child) {
+    border-bottom: 1px solid rgba(176, 176, 176, 0.33);
+    padding-bottom: 1rem;
+}
+
+.theme:not(:first-child) {
+    padding-top: 1rem;
 }

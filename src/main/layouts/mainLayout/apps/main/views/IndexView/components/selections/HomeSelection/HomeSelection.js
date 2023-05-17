@@ -8,7 +8,7 @@ class HomeSelection extends React.Component {
         return (
             <>
                 <div id="homeBlock" className="vh-100">
-                    <ParticlesBg type="circle" bg={true} num="20"/>
+                    <ParticlesBg type="circle" bg={true} num="30" />
                     <div className="row banner">
                         <div className="banner-text">
                             <div>

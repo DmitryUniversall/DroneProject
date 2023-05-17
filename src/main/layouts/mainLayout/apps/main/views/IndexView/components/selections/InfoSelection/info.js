@@ -1,6 +1,7 @@
 const info = [
     {
         title: "Про разработку",
+        id: "develop",
         themes: [
             {
                 title: "Исследование",
@@ -46,6 +47,7 @@ const info = [
     },
     {
         title: "Интересные факты и полезные мелочи",
+        id: "facts",
         themes: [
             {
                 title: "Про дроны и БПЛА",

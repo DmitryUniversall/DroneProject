@@ -11,7 +11,7 @@ class InfoSelection extends React.Component {
                 <Container>
                     {
                         info.map((block) => (
-                            <Row className="block">
+                            <Row className="block" id={block.id}>
                                 <Col lg={3} className="header-col">
                                     <div className="block-title">
                                         <h1>

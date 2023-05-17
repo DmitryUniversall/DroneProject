@@ -7,11 +7,6 @@ const MainAppUrlPatterns = [
         name: "index",
         path: "",
         view: IndexView
-    }),
-    new UrlPattern({
-        name: "reviews",
-        path: "reviews/",
-        view: () => <div>reviews</div>
     })
 ]
 

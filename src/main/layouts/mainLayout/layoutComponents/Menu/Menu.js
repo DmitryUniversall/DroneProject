@@ -1,60 +1,71 @@
 import React from "react";
-import {pathSearch} from "../../../../../core/routing/path";
-import {Link} from "react-router-dom";
 import "./menu.css"
+
 
 class Menu extends React.Component {
     constructor(props) {
         super(props);
+
+        this.backgroundColor = `rgba(30, 30, 30, {})`
         this.state = {
-            isScrolling: false
+            isScrolling: false,
+            backgroundOpacity: 0
         }
     }
 
     componentDidMount() {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 200) {
-                this.setState({
-                    isScrolling: true
-                })
-            } else {
-                this.setState({
-                    isScrolling: false
-                })
+            let opacity = (window.scrollY / 4) / 100
+            if (opacity > 1) {
+                opacity = 1
             }
+
+            this.setState({
+                backgroundOpacity: opacity
+            })
         })
+    }
+
+    scrollTo(id) {
+        let menu = document.getElementById("MainMenu")
+        let element = document.getElementById(id)
+
+        window.scrollTo({
+            top: element.offsetTop - menu.offsetHeight,
+            behavior: 'smooth',
+        });
     }
 
     render() {
         return (
             <>
-                <div className={"nav fixed-top text-dark text-center d-flex flex-row " + (this.state.isScrolling ? "scrolled " : "")}>
+                <div id="MainMenu" className={"nav fixed-top text-dark text-center d-flex flex-row"} style={{backgroundColor: this.backgroundColor.replace("{}", this.state.backgroundOpacity.toString())}}>
                     <div className="col-md-8 mx-auto">
                         <div className="d-flex justify-content-evenly align-items-center ">
                             <div className="nav-item">
-                                <Link to={pathSearch("main=>index")} className="btn nav-link bg-transparent text-white">
+                                <span onClick={() => this.scrollTo("homeBlock")} className="nav-link bg-transparent text-white">
                                     Главная
-                                </Link>
+                                </span>
                             </div>
                             <div className="nav-item">
-                                <button className="btn nav-link text-white">
-                                    Инструкция
-                                </button>
+                                <span onClick={() => this.scrollTo("about")} className="nav-link text-white">
+                                    О нас
+                                </span>
                             </div>
                             <div className="nav-item">
-                                <a href="#dev" className="btn nav-link text-white">
+                                <span onClick={() => this.scrollTo("InfoSelection")} className="nav-link text-white">
                                     Про разработку
-                                </a>
+                                </span>
                             </div>
                             <div className="nav-item">
-                                <a href="#facts" className="btn nav-link text-white">
+                                <span onClick={() => this.scrollTo("facts")} className="nav-link text-white">
                                     Интересные факты
-                                </a>
+                                </span>
                             </div>
                             <div className="nav-item">
-                                <Link to={pathSearch("main=>reviews")} className="btn nav-link text-white">
+                                <span className="nav-link text-white">
                                     Оставить отзыв
-                                </Link>
+                                </span>
                             </div>
                         </div>
                     </div>

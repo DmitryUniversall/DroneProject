@@ -1,9 +1,9 @@
-nav {
+.nav {
     background-color: transparent;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    height: 3rem;
 }
 
-.scrolled {
-    background-color: var(--navbar-background);
-    transition: background-color 0.5s ease-in-out;
+.nav-item {
+    cursor: pointer;
 }

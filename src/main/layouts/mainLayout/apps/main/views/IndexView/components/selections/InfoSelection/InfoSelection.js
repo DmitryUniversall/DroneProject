@@ -1,6 +1,5 @@
 import React from "react";
 import "./infoSelection.css"
-import data from "../../../data";
 import {Col, Container, Row} from "reactstrap";
 
 
@@ -78,10 +77,27 @@ class InfoSelection extends React.Component {
                                         <h3>
                                             Проектирование
                                         </h3>
+                                        <div className="border-bottom">
+                                            <p className="info">
+                                                3D дизайнер<span>&bull;</span>
+                                                <em className="author">
+                                                    Белов Максим
+                                                </em>
+                                            </p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum.
+                                            </p>
+                                        </div>
+
                                         <p className="info">
-                                            3D дизайнер<span>&bull;</span>
-                                            <em className="date">
-                                                Белов Максим
+                                            Инженер<span>&bull;</span>
+                                            <em className="author">
+                                                Злыдов Илья
                                             </em>
                                         </p>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -98,12 +114,12 @@ class InfoSelection extends React.Component {
                                 <div className="twelve columns">
                                     <div>
                                         <h3>
-                                            Написание web-сайта
+                                            Разработка web-сайта
                                         </h3>
                                         <p className="info">
-                                            3D дизайнер<span>&bull;</span>
-                                            <em className="date">
-                                                Белов Максим
+                                            Программист<span>&bull;</span>
+                                            <em className="author">
+                                                Мурашов Дмитрий
                                             </em>
                                         </p>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

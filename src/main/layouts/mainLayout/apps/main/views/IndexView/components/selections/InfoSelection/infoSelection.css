@@ -37,7 +37,7 @@
 }
 
 #resume .info {
-    font: 16px/24px 'librebaskerville-italic', serif;
+    font-size: 15px;
     margin-bottom: 18px;
     margin-top: 9px;
     color: white;
@@ -48,7 +48,7 @@
     margin-left: 5px;
 }
 
-#resume .date {
-    font: 15px/24px 'opensans-regular', sans-serif;
+#resume .author {
+    font-size: 15px;
     margin-top: 6px;
 }

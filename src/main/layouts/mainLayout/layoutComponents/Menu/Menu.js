@@ -39,8 +39,8 @@ class Menu extends React.Component {
     render() {
         return (
             <>
-                <div id="MainMenu" className={"nav fixed-top text-dark text-center d-flex flex-row"} style={{backgroundColor: this.backgroundColor.replace("{}", this.state.backgroundOpacity.toString())}}>
-                    <div className="col-md-12 mx-auto d-none d-sm-flex">
+                <div id="MainMenu" className="nav fixed-top text-dark text-center flex-row  d-none d-sm-flex" style={{backgroundColor: this.backgroundColor.replace("{}", this.state.backgroundOpacity.toString())}}>
+                    <div className="col-md-12">
                         <div className="d-flex justify-content-evenly align-items-center ">
                             <div className="nav-item">
                                 <span onClick={() => this.scrollTo("homeBlock")} className="nav-link bg-transparent text-white">

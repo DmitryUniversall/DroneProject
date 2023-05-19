@@ -20,7 +20,7 @@ class InfoSelection extends React.Component {  // TODO: bars selection?
                                     </div>
                                 </Col>
 
-                                <Col lg={9} className="main-col">
+                                <Col lg={9} className="main-col mt-4 mt-md-0">
                                     {
                                         block.themes.map((theme) => (
                                             <Row className="theme">

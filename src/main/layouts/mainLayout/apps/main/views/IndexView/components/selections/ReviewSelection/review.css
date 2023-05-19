@@ -1,62 +1,32 @@
-
 #reviews {
     background: #191919;
-    padding-top: 96px;
-    padding-bottom: 102px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     color: #636363;
 }
 
-#reviews .section-head {
-    margin-bottom: 42px;
-}
-
-#reviews a, #reviews a:visited {
-    color: #0762f9;
-}
-
-#reviews a:hover, #reviews a:focus {
-    color: #fff;
-}
 
 #reviews h1 {
-    font: 18px/24px 'opensans-bold', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #EBEEEE;
-    margin-bottom: 6px;
+    color: white;
 }
 
-#reviews h1 span {
-    display: none;
-}
-
-#reviews h1:before {
-    font-family: 'FontAwesome';
+#reviews span.msg-icon:before {
+    font-family: 'FontAwesome', serif;
     content: "\f0e0";
-    padding-right: 10px;
     font-size: 72px;
-    line-height: 72px;
-    text-align: left;
-    float: left;
     color: #ebeeee;
 }
 
 #reviews h4 {
     font: 16px/24px 'opensans-bold', sans-serif;
     color: #EBEEEE;
-    margin-bottom: 6px;
 }
 
 #reviews p.lead {
     line-height: 36px;
     font-size: 12px;
-    color: rgba(201, 201, 201, 0.9);
+    color: rgb(201, 201, 201);
 }
-
-#reviews .header-col {
-    padding-top: 6px;
-}
-
 
 /* contact form */
 #reviews form {
@@ -66,7 +36,7 @@
 #reviews label {
     font: 15px/24px 'opensans-bold', sans-serif;
     margin: 12px 0;
-    color: #EBEEEE;
+    color: white;
     display: inline-block;
     float: left;
     width: 26%;
@@ -78,19 +48,17 @@
     padding: 10px 20px;
     color: #eee;
     background: #373233;
-    margin-bottom: 42px;
     border: 0;
-    outline: none;
     font-size: 15px;
     line-height: 24px;
-    width: 65%;
+    width: 70%;
 }
 
 #reviews input:focus,
 #reviews textarea:focus,
 #reviews select:focus {
-    color: #fff;
-    background-color: #0762f9;
+    color: white;
+    background-color: rgba(138, 138, 138, 0.6);
 }
 
 #reviews button.submit {
@@ -102,13 +70,14 @@
     cursor: pointer;
     height: auto;
     display: inline-block;
-    border-radius: 0px;
     margin-left: 26%;
+    transition: background 0.5s, color 0.5s;
 }
 
 #reviews button.submit:hover {
     color: #0D0D0D;
     background: #fff;
+    transition: background 0.5s, color 0.5s;
 }
 
 #reviews span.required {
@@ -143,6 +112,10 @@
     position: relative;
     left: 18px;
     top: 17px;
+}
+
+#reviewMessage {
+    resize: none;
 }
 
 

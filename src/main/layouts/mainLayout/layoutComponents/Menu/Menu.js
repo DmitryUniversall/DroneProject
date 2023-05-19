@@ -40,7 +40,7 @@ class Menu extends React.Component {
         return (
             <>
                 <div id="MainMenu" className={"nav fixed-top text-dark text-center d-flex flex-row"} style={{backgroundColor: this.backgroundColor.replace("{}", this.state.backgroundOpacity.toString())}}>
-                    <div className="col-md-8 mx-auto">
+                    <div className="col-md-12 mx-auto d-none d-sm-flex">
                         <div className="d-flex justify-content-evenly align-items-center ">
                             <div className="nav-item">
                                 <span onClick={() => this.scrollTo("homeBlock")} className="nav-link bg-transparent text-white">
@@ -63,7 +63,7 @@ class Menu extends React.Component {
                                 </span>
                             </div>
                             <div className="nav-item">
-                                <span className="nav-link text-white">
+                                <span onClick={() => this.scrollTo("reviews")} className="nav-link text-white">
                                     Оставить отзыв
                                 </span>
                             </div>

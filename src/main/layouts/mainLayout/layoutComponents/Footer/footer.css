@@ -1,7 +1,3 @@
-/* ------------------------------------------------------------------ */
-/* i. Footer
-/* ------------------------------------------------------------------ */
-
 footer {
     padding-top: 48px;
     margin-bottom: 48px;
@@ -56,9 +52,8 @@ footer .social-links {
 
 footer .social-links li {
     display: inline-block;
-    margin: 0;
     padding: 0;
-    margin-left: 42px;
+    margin: 0 0 0 42px;
     color: #F06000;
 }
 

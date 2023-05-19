@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './projectCSS.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {layout} from "./projectRouting";
 import NotFound404View from "./core/generics/views/generics/NotFound404View/NotFound404View";
 import initialize from "./init";
 import globalState from "./core/state/globalState";
+import './projectCSS.css';
+
 
 initialize().then(() => {
     globalState.dispatch({

@@ -4,6 +4,8 @@ import {Col, Container, Row} from "reactstrap";
 
 
 class ReviewSelection extends React.Component {
+    async sendReview() {}  // TODO
+
     render() {
         return (
             <>

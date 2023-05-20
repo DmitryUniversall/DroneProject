@@ -12,7 +12,7 @@ class HomeSelection extends React.Component {
                     <div className="row banner">
                         <div className="banner-text">
                             <div>
-                                <h1>Конструктор для сборки БПЛА</h1>
+                                <h1 className="main-text">Конструктор для сборки БПЛА</h1>
                                 <h3>Информация, разработка, интересные факты и многое другое</h3>
                             </div>
                             <ul className="social">

@@ -1,17 +1,17 @@
 import React from "react";
-import "./infoSelection.css"
+import "./info.css"
 import {Col, Container, Row} from "reactstrap";
 import info from "./info";
 
 
-class InfoSelection extends React.Component {
+class InfoSelection extends React.Component {  // TODO: bars selection?
     render() {
         return (
             <section id="InfoSelection">
                 <Container>
                     {
                         info.map((block) => (
-                            <Row className="block" id={block.id}>
+                            <Row className="block" id={block.id} key={Math.random()}>
                                 <Col lg={3} className="header-col">
                                     <div className="block-title">
                                         <h1>
@@ -20,10 +20,10 @@ class InfoSelection extends React.Component {
                                     </div>
                                 </Col>
 
-                                <Col lg={9} className="main-col">
+                                <Col lg={9} className="main-col mt-4 mt-md-0">
                                     {
                                         block.themes.map((theme) => (
-                                            <Row className="theme">
+                                            <Row className="theme" key={Math.random()}>
                                                 <Col lg={12}>
                                                     <h2>
                                                         {theme.title}
@@ -31,7 +31,7 @@ class InfoSelection extends React.Component {
                                                     <div className="theme-texts">
                                                         {
                                                             theme.texts.map((text) => (
-                                                                <div className="info-item">
+                                                                <div className="info-item" key={Math.random()}>
                                                                     <div className="author-info">
                                                                         {text.author_role}<span>&bull;</span>
                                                                         <em className="author">

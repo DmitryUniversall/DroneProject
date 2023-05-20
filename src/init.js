@@ -1,6 +1,4 @@
-async function initialize() {
-
-}
+async function initialize() {}
 
 
 export default initialize

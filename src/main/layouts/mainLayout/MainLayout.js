@@ -4,6 +4,7 @@ import mainLayoutUrlPatterns from "./layoutRouting";
 import MainLayoutContent from "./layoutComponents/MainLayoutContent";
 import './layoutCSS.css'
 import Menu from "./layoutComponents/Menu/Menu";
+import Footer from "./layoutComponents/Footer/Footer";
 
 
 class MainLayout extends React.Component {
@@ -20,9 +21,15 @@ class MainLayout extends React.Component {
                 <Menu />
                 {/* END MENU*/}
 
+                {/* MAIN CONTENT */}
                 <div id='mainContent'>
                     <MainLayoutContent get_routes={() => this.get_routes()}/>
                 </div>
+                {/* END MAIN CONTENT */}
+
+                {/* FOOTER */}
+                <Footer />
+                {/* END FOOTER*/}
             </>
         )
     }

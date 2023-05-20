@@ -26,9 +26,9 @@ class Menu extends React.Component {
 
     componentDidMount() {
         this.setOpacity()
-        let global_menu_element = document.getElementById("GMenu")
-
         window.addEventListener('scroll', () => this.setOpacity())
+
+        let global_menu_element = document.getElementById("GMenu")
         window.addEventListener("click", (event) => {
             if (this.state.slidebarOpened && !global_menu_element.contains(event.target)) {
                 this.toggleSlidebar()

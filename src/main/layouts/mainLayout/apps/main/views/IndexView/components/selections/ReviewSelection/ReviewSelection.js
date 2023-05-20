@@ -26,13 +26,7 @@ class ReviewSelection extends React.Component {
 
                             <Col lg={10}>
                                 <p className="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.
-                                </p>
+                                    Ваши отзывы необходимы для нас. Делясь своим опытом, вы можете помочь нам улучшить наш сервис. Независимо от того, был ли у вас положительный опыт или вы столкнулись с какими-то вещами, требующими улучшения, ваш честный отзыв поможет нам обеспечить превосходный сервис, а так же поможет потенциальным клиентам принимать решения. Ваши слова могут изменить ситуацию и сформировать будущее нашего сервиса.                                </p>
                             </Col>
                         </Row>
 
@@ -113,12 +107,22 @@ class ReviewSelection extends React.Component {
                                     <ul id="twitter">
                                         <li>
                                             <span>
-                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                Будьте честны: делитесь своими мыслями. Честность имеет огромное значение как для нас, так и для будущих клиентов.
                                             </span>
                                         </li>
                                         <li>
                                             <span>
-                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                Предоставьте подробные сведения. Укажите даты, местоположения или любую другую относящуюся к делу информацию.
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                Используйте уважительный тон: Поддерживайте вежливый и уважительный тон на протяжении всего вашего отзыва. Даже если у вас был негативный опыт, важно выражать свои мысли конструктивно, не прибегая к оскорбительным выражениям. Это поможет нам лучше разобраться в ситуации
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                По возможности предоставьте контакты для обратной связи. Мы сделаем всё, чтобы помочь вам
                                             </span>
                                         </li>
                                     </ul>

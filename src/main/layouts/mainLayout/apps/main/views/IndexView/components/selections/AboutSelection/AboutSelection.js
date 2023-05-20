@@ -10,7 +10,7 @@ class AboutSelection extends React.Component {
                 <div id="about">
                     <Container>
                         <Row>
-                            <Col md={3} className="d-flex justify-content-center">
+                            <Col md={3} className="d-flex justify-content-center mb-5 mb-md-0">
                                 <img
                                     className="profile-pic align-self-start bg-white mt-5"
                                     src="/logo.svg"
@@ -21,27 +21,16 @@ class AboutSelection extends React.Component {
                                 <Row className="nine columns main-col">
                                     <Row>
                                         <h2>О нас</h2>
-                                        <p className="w-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                            mollit anim id est laborum.</p>
+                                        <p className="w-100">
+                                            Добро пожаловать! Мы - ваш отправной пункт для всего, что связано с созданием беспилотных летательных аппаратов. Мы понимаем, насколько увлекательно создавать свой собственный беспилотник, по этому предлагаем вам ознакомиться с нашим набором для создания собственного БПЛА!
+                                        </p>
                                     </Row>
 
                                     <Row>
                                         <div className="columns main-col">
                                             <h2>Наша задача и цели</h2>
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                mollit anim id est laborum.
+                                                Мы стремимся предоставить людям возможность исследовать безграничные возможности создания беспилотных летательных аппаратов и авиационных технологий.  Мы хотим поддерживать интерес к дизайну и проектированию беспилотных летательных аппаратов среди подростков. Мы твердо верим в важность вдохновения следующего поколения новаторов и инженеров.
                                             </p>
                                         </div>
                                     </Row>

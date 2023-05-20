@@ -7,14 +7,9 @@ const info = [
                 title: "Исследование",
                 texts: [
                     {
-                        author: "Галкин Максим",
-                        author_role: "Исследователь / Работа с текстом",
-                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    },
-                    {
                         author: "Савёлов Никита",
                         author_role: "Исследователь",
-                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        text: "Мы изучили конструктивные особенности БПЛА, причины падений, сформировали список деталей, которые можно легко заменить, проанализировали аналоги, разработали модуль корпуса и определили наиболее подходящий материал для изготовления деталей конструктора."
                     }
                 ]
             },
@@ -24,12 +19,12 @@ const info = [
                     {
                         author: "Белов Максим",
                         author_role: "3D дизайнер",
-                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        text: "Создание собственного беспилотника может быть сложной задачей, но в то же время невероятно интересной. Каждый шаг - от выбора правильных компонентов до обеспечения стабильной динамики полета - требует внимания к деталям. "
                     },
                     {
                         author: "Злыдов Илья",
                         author_role: "Инженер",
-                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        text: "Балансировка веса, мощности и контроля оказалось для нас самым сложным. Этот процесс включает в себя устранение неполадок и тонкую настройку для достижения оптимальной производительности и стабильного полёта."
                     }
                 ]
             },
@@ -39,7 +34,7 @@ const info = [
                     {
                         author: "Мурашов Дмитрий",
                         author_role: "Программист",
-                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        text: "Написание этого проекта показалось очень интересной задачей для меня. В процессе я открыл для себя новые инструменты разработки и подходы к проектированию архитектуры web-приложения. Сайт был создан с помощью фреймворка react js и библиотеки стилей bootstrap 5. Не смотря на то, что в данный момент проект имеет лишь одну страницу, моя архитектура позволяет легко расширять и обновлять его. Также, благодаря использованию bootstrap 5, сайт полностью адаптирован для всех видов устройств: от компьютеров и ноутбуков до телефонов и планшетов."
                     }
                 ]
             }
@@ -53,9 +48,19 @@ const info = [
                 title: "Про дроны и БПЛА",
                 texts: [
                     {
-                        author: "Галкин Максим",
-                        author_role: "Исследователь / Работа с текстом",
-                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        author: "Из интернета",
+                        author_role: "Интересный факт",
+                        text: "Почтовая компания DHL испытала первый аппарат еще в 2013 году. Целью является доставка почты в труднопроходимые участки. Уже с 2014 года такие дроны стали массово доставлять почту, которая защищена водонепроницаемыми контейнерами. Известные компании, такие как Google и Amazon, уже заявили о закупке такого оборудования."
+                    },
+                    {
+                        author: "Из интернета",
+                        author_role: "Интересный факт",
+                        text: "В городе Сыктывкар прошло успешное испытание машин, которые доставляют пиццу клиентам по воздуху. Мировая компания «Dodo Pizza» решила таким образом привлечь клиентов и успех действительно есть. Чтобы доставить пиццу к месту назначения, необходимо выбрать маршрут с минимальными радиопомехами. Вы можете заказать продукт, находясь на площади или у себя в квартире через интернет, но все равно придется выйти на улицу, так как дрон не прилетит к вам в окно."
+                    },
+                    {
+                        author: "Из интернета",
+                        author_role: "Интересный факт",
+                        text: "Фермеры из Японии и США продолжают активно привлекать летательные аппараты для распыления над полями пестицидов и удобрений. Обходится это намного дешевле, чем ручной труд, а эффективность повышается в разы. Может, в скором будущем фермеры и колхозники будут просто наблюдать, как за них всю работу выполняют машины?"
                     }
                 ]
             },
@@ -64,8 +69,13 @@ const info = [
                 texts: [
                     {
                         author: "Галкин Максим",
-                        author_role: "Исследователь / Работа с текстом",
-                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        author_role: "Исследователь",
+                        text: "Дроны бывают самолетного и вертолетного типа. Летательные аппараты самолетного типа взлетают горизонтально, а вертолетного типа взлетают вертикально. Для нашего конструктора мы выбрали вертолетный тип."
+                    },
+                    {
+                        author: "Галкин Максим",
+                        author_role: "Исследователь",
+                        text: "Так как все детали в наборе изготовлены из пластика, то собранный дрон получится лёгким, а значит сможет развивать достаточно большую скорость и будет иметь неплохую маневренность"
                     }
                 ]
             }

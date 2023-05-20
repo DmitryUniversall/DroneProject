@@ -2,6 +2,7 @@ import BaseView from "../../../../../../../core/generics/views/base/BaseView";
 import HomeSelection from "./components/selections/HomeSelection/HomeSelection";
 import AboutSelection from "./components/selections/AboutSelection/AboutSelection";
 import InfoSelection from "./components/selections/InfoSelection/InfoSelection";
+import ReviewSelection from "./components/selections/ReviewSelection/ReviewSelection";
 
 
 class IndexView extends BaseView {
@@ -12,6 +13,7 @@ class IndexView extends BaseView {
                     <HomeSelection />
                     <AboutSelection />
                     <InfoSelection />
+                    <ReviewSelection />
                 </div>
             </>
         )

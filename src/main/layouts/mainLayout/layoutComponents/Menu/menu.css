@@ -48,6 +48,7 @@
 
 .slidebar-item {
     width: 100%;
+    cursor: pointer;
 }
 
 .slidebar-item:not(:last-child) {

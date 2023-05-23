@@ -82,7 +82,7 @@ class Menu extends React.Component {
                             {
                                 this.getLinks().map((link) => (
                                     <div className="nav-item" key={Math.random()}>
-                                        <span onClick={link.onClick} className="nav-link text-white">
+                                        <span onClick={link.onClick} className="nav-link text-white no-select">
                                             {link.title}
                                         </span>
                                     </div>
@@ -103,7 +103,7 @@ class Menu extends React.Component {
                         {
                             this.getLinks().map((link) => (
                                 <div className="slidebar-item" key={Math.random()}>
-                                    <div className="d-flex flex-row">
+                                    <div className="d-flex flex-row no-select">
                                         <div className="icon">
                                             {link.icon}
                                         </div>

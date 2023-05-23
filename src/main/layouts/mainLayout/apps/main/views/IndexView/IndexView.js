@@ -6,7 +6,30 @@ import ReviewSelection from "./components/selections/ReviewSelection/ReviewSelec
 
 
 class IndexView extends BaseView {
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props.params.blockName) {
+            this.scrollTo(this.props.params.blockName)
+        }
+    }
+
+    componentDidMount() {
+        if (this.props.params.blockName) {
+            this.scrollTo(this.props.params.blockName)
+        }
+    }
+
+    scrollTo(id) {
+        let menu = document.getElementById("HMenu")
+        let element = document.getElementById(id)
+
+        window.scrollTo({
+            top: element.offsetTop - menu.offsetHeight,
+            behavior: 'smooth',
+        });
+    }
+
     renderView() {
+
         return (
             <>
                 <div className="d-flex flex-column w-100">

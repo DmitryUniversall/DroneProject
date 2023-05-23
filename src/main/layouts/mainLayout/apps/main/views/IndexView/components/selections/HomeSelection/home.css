@@ -1,4 +1,4 @@
-#homeBlock {
+#home {
     position: relative;
     height: 100%;
     min-height: 500px;
@@ -7,14 +7,14 @@
     overflow: hidden;
 }
 
-#homeBlock:before {
+#home:before {
     content: '';
     display: inline-block;
     vertical-align: middle;
     height: 100%;
 }
 
-#homeBlock .banner {
+#home .banner {
     display: inline-block;
     vertical-align: middle;
     margin: 0 auto;
@@ -23,31 +23,31 @@
     text-align: center;
 }
 
-#homeBlock .banner-text h1 {
+#home .banner-text h1 {
     font: 70px/1em 'opensans-bold', sans-serif;
     color: #fff;
     margin: 0 auto 18px auto;
 }
 
-#homeBlock .banner-text h3 {
+#home .banner-text h3 {
     font: 18px/1.9em 'librebaskerville-regular', serif;
     color: #ddd;
 }
 
-/* #homeBlock social links */
-#homeBlock .social {
+/* #home social links */
+#home .social {
     margin: 24px 0;
     padding: 0;
     font-size: 30px;
 }
 
-#homeBlock .social li {
+#home .social li {
     display: inline-block;
     margin: 0 15px;
     padding: 0;
 }
 
-#homeBlock .social li button {
+#home .social li button {
     color: #fff;
 }
 
@@ -74,14 +74,14 @@
     color: #d3d3d3;
 }
 
-#homeBlock .scrolldown button {
+#home .scrolldown button {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
-#homeBlock .scrolldown button:hover {
+#home .scrolldown button:hover {
     color: #0762f9;
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import "./menu.css"
+import {pathSearch} from "../../../../../core/routing/path";
 
 
 class Menu extends React.Component {
@@ -36,16 +37,6 @@ class Menu extends React.Component {
         })
     }
 
-    scrollTo(id) {
-        let menu = document.getElementById("HMenu")
-        let element = document.getElementById(id)
-
-        window.scrollTo({
-            top: element.offsetTop - menu.offsetHeight,
-            behavior: 'smooth',
-        });
-    }
-
     toggleSlidebar() {
         this.setState({
             slidebarOpened: !this.state.slidebarOpened
@@ -56,27 +47,27 @@ class Menu extends React.Component {
         return [
             {
                 title: "Главная",
-                onClick: () => this.scrollTo("homeBlock"),
+                onClick: () => this.props.navigate(pathSearch('main=>indexBlock', {blockName: 'home'})),
                 icon: <i className="fa fa-home" aria-hidden="true"></i>
             },
             {
                 title: "О нас",
-                onClick: () => this.scrollTo("about"),
+                onClick: () => this.props.navigate(pathSearch('main=>indexBlock', {blockName: 'about'})),
                 icon: <i className="fa fa-info-circle" aria-hidden="true"></i>
             },
             {
                 title: "Про разработку",
-                onClick: () => this.scrollTo("InfoSelection"),
+                onClick: () => this.props.navigate(pathSearch('main=>indexBlock', {blockName: 'dev'})),
                 icon: <i className="fa fa-puzzle-piece" aria-hidden="true"></i>
             },
             {
                 title: "Интересные факты",
-                onClick: () => this.scrollTo("facts"),
+                onClick: () => this.props.navigate(pathSearch('main=>indexBlock', {blockName: 'facts'})),
                 icon: <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
             },
             {
                 title: "Оставить отзыв",
-                onClick: () => this.scrollTo("reviews"),
+                onClick: () => this.props.navigate(pathSearch('main=>indexBlock', {blockName: 'reviews'})),
                 icon: <i className="fa fa-star-o" aria-hidden="true"></i>
             }
         ]

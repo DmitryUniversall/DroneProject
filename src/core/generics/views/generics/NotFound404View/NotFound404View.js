@@ -4,7 +4,7 @@ class NotFound404View extends BaseView {
     renderView() {
         return (
             <>
-                <h1>Страница не найдена</h1>
+                <h1 className="mt-5">Страница не найдена</h1>
             </>
         )
     }

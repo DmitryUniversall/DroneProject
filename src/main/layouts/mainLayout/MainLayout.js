@@ -5,6 +5,7 @@ import MainLayoutContent from "./layoutComponents/MainLayoutContent";
 import './layoutCSS.css'
 import Menu from "./layoutComponents/Menu/Menu";
 import Footer from "./layoutComponents/Footer/Footer";
+import WithRouterWrapper from "../../../core/generics/views/wrappers/WithRouterWrapper";
 
 
 class MainLayout extends React.Component {
@@ -15,10 +16,12 @@ class MainLayout extends React.Component {
     }
 
     render() {
+        let WrappedMenu = WithRouterWrapper(Menu)
+
         return (
             <>
                 {/* MENU */}
-                <Menu />
+                <WrappedMenu />
                 {/* END MENU*/}
 
                 {/* MAIN CONTENT */}

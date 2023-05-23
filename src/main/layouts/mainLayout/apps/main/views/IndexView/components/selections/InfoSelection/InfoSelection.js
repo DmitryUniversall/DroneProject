@@ -8,7 +8,7 @@ class InfoSelection extends React.Component {  // TODO: bars selection?
     render() {
         return (
             <section id="InfoSelection">
-                <Container>
+                <Container id="dev">
                     {
                         info.map((block) => (
                             <Row className="block" id={block.id} key={Math.random()}>
@@ -20,7 +20,7 @@ class InfoSelection extends React.Component {  // TODO: bars selection?
                                     </div>
                                 </Col>
 
-                                <Col lg={9} className="main-col mt-4 mt-md-0">
+                                <Col lg={9} className="main-col mt-5 mt-lg-0">
                                     {
                                         block.themes.map((theme) => (
                                             <Row className="theme" key={Math.random()}>

@@ -79,7 +79,7 @@ class ReviewSelection extends React.Component {
                                     </div>
                                 </div>
 
-                                {/*<div id="message-warning">Error boy</div> TODO: error handle*/}
+                                {/*<div id="message-warning">Error</div> TODO: error handle*/}
 
                                 {/*<div id="message-success"> TODO: success handle*/}
                                 {/*    <i className="fa fa-check"></i>Your message was sent, thank you!*/}
@@ -104,7 +104,7 @@ class ReviewSelection extends React.Component {
                                     <h4 className="widget-title">
                                         При написании отзыва, пожалуйста, соблюдайте следующие правила:
                                     </h4>
-                                    <ul id="twitter">
+                                    <ul>
                                         <li>
                                             <span>
                                                 Будьте честны: делитесь своими мыслями. Честность имеет огромное значение как для нас, так и для будущих клиентов.

@@ -27,7 +27,7 @@ function pathSearch(name, params) {
         return path
     } catch (error) {
         if (error.constructor === TypeError) {
-            throw new Error(`Endpoint '${name}' not found`)
+            throw new Error(`Endpoint '${name}' not found: ${error.message}`)
         } else {
             throw error
         }

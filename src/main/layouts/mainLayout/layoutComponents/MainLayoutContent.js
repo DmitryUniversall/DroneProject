@@ -17,14 +17,13 @@ class MainLayoutContent extends React.Component {
         return (
             <>
                 {/* Main content*/}
-                <div id='MainContainer' className='d-flex justify-content-center w-100 h-100'>
+                <div id='MainContainer' className='d-flex justify-content-center w-100 h-100 '>
                     <Routes>
                         {this.get_routes()}
                         <Route path='*' element={<NotFound404View />}/>
                     </Routes>
                 </div>
                 {/* END Main content*/}
-
             </>
         );
     }

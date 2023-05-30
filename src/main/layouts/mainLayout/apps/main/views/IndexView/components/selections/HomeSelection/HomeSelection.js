@@ -16,12 +16,12 @@ class HomeSelection extends React.Component {
                                 <h3>Информация, разработка, интересные факты и многое другое</h3>
                             </div>
                             <ul className="social">
-                                <button className="btn instruction-btn">
+                                <a href="https://github.com/DmitryMurashov/DroneProject" className="btn instruction-btn">
                                     <i className="fa fa-book"></i>Инструкция
-                                </button>
-                                <button className="btn github-btn ms-3">
+                                </a>
+                                <a href="https://github.com/DmitryMurashov/DroneProject" className="btn github-btn ms-3">
                                     <i className="fa fa-github"></i>Исходники на Github
-                                </button>
+                                </a>
                             </ul>
                         </div>
                     </div>

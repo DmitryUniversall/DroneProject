@@ -8,6 +8,11 @@ class BaseView extends React.Component {
         super(props);
 
         this.state = {}
+        this.isOnScreen = true
+    }
+
+    componentWillUnmount() {
+        this.isOnScreen = false
     }
 
     renderView() {}

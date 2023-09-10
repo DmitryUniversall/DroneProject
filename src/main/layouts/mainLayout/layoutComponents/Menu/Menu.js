@@ -7,7 +7,7 @@ class Menu extends React.Component {
     constructor(props) {
         super(props);
 
-        this.backgroundColor = `rgba(30, 30, 30, {})`
+        this.backgroundColor = `rgba(20, 20, 20, {})`
         this.state = {
             backgroundOpacity: 0,
             slidebarOpened: false
@@ -69,6 +69,11 @@ class Menu extends React.Component {
                 title: "Оставить отзыв",
                 onClick: () => this.props.navigate(pathSearch('main=>indexBlock', {blockName: 'reviews'})),
                 icon: <i className="fa fa-star-o" aria-hidden="true"></i>
+            },
+            {
+                title: "Инструкция",
+                onClick: () => this.props.navigate(pathSearch('main=>instruction')),
+                icon: <i className="fa fa-info-circle" aria-hidden="true"></i>
             }
         ]
     }
@@ -76,7 +81,7 @@ class Menu extends React.Component {
     render() {
         return (
             <div id="GMenu">
-                <div id="HMenu" className="nav navbar-expand-lg fixed-top text-dark text-center" style={{backgroundColor: this.backgroundColor.replace("{}", this.state.backgroundOpacity.toString())}}>
+                <div id="HMenu" className="nav fixed-top text-center" style={{backgroundColor: this.backgroundColor.replace("{}", this.state.backgroundOpacity.toString())}}>
                     <div className="col-md-12 d-none d-md-block">
                         <div className="d-flex justify-content-evenly align-items-center">
                             {

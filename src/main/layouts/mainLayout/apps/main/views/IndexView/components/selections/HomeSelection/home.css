@@ -24,13 +24,13 @@
 }
 
 #home .banner-text h1 {
-    font: 70px/1em 'opensans-bold', sans-serif;
+    font: 70px/1em 'Arial', sans-serif;
     color: #fff;
     margin: 0 auto 18px auto;
 }
 
 #home .banner-text h3 {
-    font: 18px/1.9em 'librebaskerville-regular', serif;
+    font: 18px/1.9em 'Arial Black', serif;
     color: #ddd;
 }
 
@@ -72,17 +72,6 @@
 
 .github-btn:hover, .instruction-btn:hover {
     color: #d3d3d3;
-}
-
-#home .scrolldown button {
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-#home .scrolldown button:hover {
-    color: #0762f9;
 }
 
 @media screen and (max-width: 576px) {

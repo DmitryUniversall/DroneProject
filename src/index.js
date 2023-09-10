@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {layout} from "./projectRouting";
-import NotFound404View from "./core/generics/views/generics/NotFound404View/NotFound404View";
+import NotFound404View from "./main/layouts/mainLayout/apps/main/views/NotFound404View/NotFound404View";
 import initialize from "./init";
 import globalState from "./core/state/globalState";
 import './projectCSS.css';

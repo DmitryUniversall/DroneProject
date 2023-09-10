@@ -1,4 +1,4 @@
-import ErrorView from "../generics/ErrorView/ErrorView";
+import ErrorView from "../../../../main/layouts/mainLayout/apps/main/views/ErrorView/ErrorView";
 import React from "react";
 
 

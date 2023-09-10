@@ -1,6 +1,8 @@
 import React from "react";
 import ParticlesBg from "particles-bg";
 import "./home.css"
+import {Link} from "react-router-dom";
+import {pathSearch} from "../../../../../../../../../../core/routing/path";
 
 
 class HomeSelection extends React.Component {
@@ -16,9 +18,9 @@ class HomeSelection extends React.Component {
                                 <h3>Информация, разработка, интересные факты и многое другое</h3>
                             </div>
                             <ul className="social">
-                                <a href="https://drive.google.com/drive/folders/1ilHxdUYqEPaNo9nOF_I0fnBuia0guqci" className="btn instruction-btn">
+                                <Link to={pathSearch("main=>instruction")} className="btn instruction-btn">
                                     <i className="fa fa-book"></i>Инструкция
-                                </a>
+                                </Link>
                                 <a href="https://github.com/DmitryMurashov/DroneProject" className="btn github-btn ms-sm-3">
                                     <i className="fa fa-github"></i>Исходники сайта на Github
                                 </a>

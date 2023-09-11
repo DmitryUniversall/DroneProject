@@ -5,8 +5,9 @@ import {layout} from "./projectRouting";
 import NotFound404View from "./main/layouts/mainLayout/apps/main/views/NotFound404View/NotFound404View";
 import initialize from "./init";
 import globalState from "./core/state/globalState";
+import './themes.css'
 import './projectCSS.css';
-
+import './bs_plus.css'
 
 initialize().then(() => {
     globalState.dispatch({

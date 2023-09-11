@@ -10,12 +10,12 @@ class HomeSelection extends React.Component {
         return (
             <>
                 <div id="home" className="vh-100">
-                    <ParticlesBg type="circle" bg={true} num="30" />
+                    <ParticlesBg type="circle" bg={true} num="15" />
                     <div className="row banner">
                         <div className="banner-text">
                             <div>
-                                <h1 className="main-text">Конструктор для сборки БПЛА</h1>
-                                <h3>Информация, разработка, интересные факты и многое другое</h3>
+                                <h1 className="main-text theme-text-primary">Конструктор для сборки БПЛА</h1>
+                                <h3 className="theme-text-secondary">Информация, разработка, интересные факты и многое другое</h3>
                             </div>
                             <ul className="social">
                                 <Link to={pathSearch("main=>instruction")} className="btn instruction-btn">

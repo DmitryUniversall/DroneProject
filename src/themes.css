@@ -1,0 +1,140 @@
+/*--background-primary-light: 44, 191, 170;*/
+/*--accent-light: 37, 89, 88;*/
+/*--text-primary-light: 0, 0, 0;*/
+/*--text-secondary-light: 30, 30, 30;*/
+/*--active-light: 133, 133, 133;*/
+/*--hover-light: 204, 204, 204;*/
+
+
+:root {
+    /* light theme tokens */
+    --background-primary-light: 255, 255, 255;
+    --accent-light: 16, 110, 171;  /*3, 50, 80*/
+    --text-primary-light: 18, 18, 18;
+    --text-secondary-light: 75, 75, 75;
+    --active-light: 150, 150, 150;
+    --hover-light: 190, 190, 190;
+
+
+
+    /* dark theme tokens */
+    --background-primary-dark: 18, 18, 18;
+    --accent-dark: 28, 169, 253;  /*76, 144, 180*/
+    --text-primary-dark: 255, 255, 255;
+    --text-secondary-dark: 210, 210, 210;
+    --active-dark: 133, 133, 133;
+    --hover-dark: 204, 204, 204;
+
+
+
+    /* General */
+    --accent-blue: 7, 98, 249;
+
+
+    /* General(RGB) */
+    --rgb-accent-blue: rgb(var(--accent-blue));
+    --linear-gradient-blue: rgb(0,208,255) 0%,  rgb(0,138,255) 100%;
+
+    /* Themes(RGB) */
+    --rgb-background-primary: rgb(var(--background-primary));
+    --rgb-text-primary: rgb(var(--text-primary));
+    --rgb-text-secondary: rgb(var(--text-secondary));
+    --rgb-active: rgb(var(--active));
+    --rgb-hover: rgb(var(--hover));
+    --rgb-accent: rgb(var(--accent));
+}
+
+
+[data-theme='light'] {
+    --background-primary: var(--background-primary-light);
+    --accent: var(--accent-light);
+    --text-primary: var(--text-primary-light);
+    --text-secondary: var(--text-secondary-light);
+    --active: var(--active-light);
+    --hover: var(--hover-light);
+}
+
+[data-theme='dark'] {
+    --background-primary: var(--background-primary-dark);
+    --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --active: var(--active-dark);
+    --accent: var(--accent-dark);
+    --hover: var(--hover-dark);
+}
+
+
+/* Colors */
+.theme-background-primary {
+    background-color: var(--rgb-background-primary) !important;
+}
+
+.theme-text-primary {
+    color: var(--rgb-text-primary) !important;
+}
+
+.theme-text-secondary {
+    color: var(--rgb-text-secondary) !important;
+}
+
+.theme-text-accent {
+    color: var(--rgb-accent) !important;
+}
+
+.theme-text-active {
+    color: var(--rgb-active) !important;
+}
+
+.theme-text-hover {
+    color: var(--rgb-hover) !important;
+}
+
+.theme-gradient {
+    --gradient-direction: none;
+    --gradient: none;
+}
+
+.theme-gradient.to-right {
+    --gradient-direction: to right;
+}
+
+.theme-gradient.to-left {
+    --gradient-direction: to left;
+}
+
+.theme-gradient.to-top {
+    --gradient-direction: to top;
+}
+
+.theme-gradient.to-bottom {
+    --gradient-direction: to bottom;
+}
+
+.theme-gradient.gradient-blue {
+    --gradient: var(--linear-gradient-blue);
+}
+
+.theme-gradient.border-gradient {
+    border-image: linear-gradient(var(--gradient-direction), var(--gradient)) !important;
+    border-image-slice: 1 !important;
+}
+
+.theme-gradient.text-gradient {
+    background: linear-gradient(var(--gradient-direction), var(--gradient)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Button-like text/link */
+.theme-btn-like {
+    cursor: pointer !important;
+    color: var(--rgb-text-primary) !important;
+}
+
+.theme-btn-like:hover {
+    color: var(--rgb-hover) !important;
+}
+
+.theme-btn-like:active {
+    color: var(--rgb-active) !important;
+}

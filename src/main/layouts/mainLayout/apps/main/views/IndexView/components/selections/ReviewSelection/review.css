@@ -1,53 +1,65 @@
 #reviews {
-    background: #191919;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #636363;
+    /* light theme tokens */
+    --reviews-bg-light: var(--background-primary);
+    --review-textarea-bg-light: 204, 204, 204;
+    --review-textarea-focus-bg-light: 190, 190, 190;
+
+    /* dark theme tokens */
+    --reviews-bg-dark: var(--background-primary);  /*25, 25, 25*/
+    --review-textarea-bg-dark: 55, 50, 51;
+    --review-textarea-focus-bg-dark: 130, 130, 130;
+
+    --rgb-reviews-bg: rgb(var(--reviews-bg));
+    --rgb-review-textarea-bg: rgb(var(--review-textarea-bg))
 }
 
 
-#reviews h1 {
-    color: white;
+[data-theme='light'] #reviews {
+    --reviews-bg: var(--reviews-bg-light);
+    --review-textarea-bg: var(--review-textarea-bg-light);
+    --review-textarea-focus-bg: var(--review-textarea-focus-bg-light);
+}
+
+
+[data-theme='dark'] #reviews {
+    --reviews-bg: var(--reviews-bg-dark);
+    --review-textarea-bg: var(--review-textarea-bg-dark);
+    --review-textarea-focus-bg: var(--review-textarea-focus-bg-dark);
+}
+
+/*color: #636363;*/
+#reviews {
+    background: var(--rgb-reviews-bg);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 #reviews span.msg-icon:before {
     font-family: 'FontAwesome', serif;
     content: "\f0e0";
-    font-size: 72px;
-    color: #ebeeee;
-}
-
-#reviews h4 {
-    font: 16px/24px 'opensans-bold', sans-serif;
-    color: #EBEEEE;
+    font-size: 4.5rem;
 }
 
 #reviews p.lead {
-    line-height: 20px;
-    font-size: 13px;
-    color: rgb(201, 201, 201);
+    font-size: 1rem;
 }
 
-/* contact form */
 #reviews form {
     margin-bottom: 30px;
 }
 
 #reviews label {
-    font: 15px/24px 'opensans-bold', sans-serif;
-    margin: 12px 0;
-    color: white;
     display: inline-block;
     float: left;
-    width: 26%;
+    width: 26.1%;
 }
 
 #reviews input,
 #reviews textarea,
 #reviews select {
-    padding: 10px 20px;
-    color: #eee;
-    background: #373233;
+    padding: 0.6rem 0.6rem;
+    color: var(--rgb-text-primary);
+    background-color: rgba(var(--review-textarea-bg), 0.6);
     border: 0;
     font-size: 15px;
     line-height: 24px;
@@ -57,32 +69,27 @@
 #reviews input:focus,
 #reviews textarea:focus,
 #reviews select:focus {
-    color: white;
-    background-color: rgba(138, 138, 138, 0.6);
+    outline-width: 0;
+    color: var(--rgb-text-primary);
+    background-color: rgba(var(--review-textarea-focus-bg), 0.3);
 }
 
 #reviews button.submit {
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #fff;
-    background: #0D0D0D;
-    border: none;
-    cursor: pointer;
+    color: var(--rgb-text-primary);
+    border: 1px solid var(--rgb-text-primary);
     height: auto;
     display: inline-block;
     margin-left: 26%;
-    transition: background 0.5s, color 0.5s;
+    width: 70%;
+    transition: background 0.3s, color 0.3s;
 }
 
 #reviews button.submit:hover {
-    color: #0D0D0D;
-    background: #fff;
-    transition: background 0.5s, color 0.5s;
-}
-
-#reviews span.required {
-    color: #0762f9;
-    font-size: 13px;
+    color: var(--rgb-background-primary);
+    background: var(--rgb-text-primary);
+    transition: background 0.3s, color 0.3s;
 }
 
 #message-warning, #message-success {
@@ -104,14 +111,7 @@
 
 #message-warning i,
 #message-success i {
-    margin-right: 10px;
-}
-
-#image-loader {
-    display: none;
-    position: relative;
-    left: 18px;
-    top: 17px;
+    margin-right: 0.3rem;
 }
 
 #reviewMessage {

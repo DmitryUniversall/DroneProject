@@ -1,7 +1,6 @@
 #home {
     position: relative;
     height: 100%;
-    min-height: 500px;
     width: 100%;
     text-align: center;
     overflow: hidden;
@@ -25,13 +24,13 @@
 
 #home .banner-text h1 {
     font: 70px/1em 'Arial', sans-serif;
-    color: #fff;
+    color: var(--rgb-text-primary);
     margin: 0 auto 18px auto;
 }
 
 #home .banner-text h3 {
     font: 18px/1.9em 'Arial Black', serif;
-    color: #ddd;
+    color: var(--rgb-text-secondary);
 }
 
 /* #home social links */

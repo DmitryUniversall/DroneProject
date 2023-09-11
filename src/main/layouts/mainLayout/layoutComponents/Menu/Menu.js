@@ -7,11 +7,14 @@ class Menu extends React.Component {
     constructor(props) {
         super(props);
 
-        this.backgroundColor = `rgba(20, 20, 20, {})`
+        this.backgroundColor = `rgba(var(--background-menu), {})`
         this.state = {
             backgroundOpacity: 0,
             slidebarOpened: false
         }
+
+        this.getTheme = this.props.getTheme
+        this.toggleTheme = this.props.toggleTheme
     }
 
     setOpacity() {
@@ -73,7 +76,7 @@ class Menu extends React.Component {
             {
                 title: "Инструкция",
                 onClick: () => this.props.navigate(pathSearch('main=>instruction')),
-                icon: <i className="fa fa-info-circle" aria-hidden="true"></i>
+                icon: <i className="fa fa-puzzle-piece" aria-hidden="true"></i>
             }
         ]
     }
@@ -81,25 +84,39 @@ class Menu extends React.Component {
     render() {
         return (
             <div id="GMenu">
-                <div id="HMenu" className="nav fixed-top text-center" style={{backgroundColor: this.backgroundColor.replace("{}", this.state.backgroundOpacity.toString())}}>
+                <div id="HMenu" className="nav fixed-top text-center w-100"
+                     style={{backgroundColor: this.backgroundColor.replace("{}", this.state.backgroundOpacity.toString())}}>
                     <div className="col-md-12 d-none d-md-block">
                         <div className="d-flex justify-content-evenly align-items-center">
                             {
                                 this.getLinks().map((link) => (
                                     <div className="nav-item" key={Math.random()}>
-                                        <span onClick={link.onClick} className="nav-link text-white no-select">
+                                        <span onClick={link.onClick}
+                                              className="nav-link theme-btn-like theme-text-primary no-select">
                                             {link.title}
                                         </span>
                                     </div>
                                 ))
                             }
+
+                            <i aria-hidden="true"
+                               className={"fa theme-text-primary theme-btn-like " + (this.getTheme() === 'light' ? "fa-moon-o" : "fa-sun-o")}
+                               onClick={() => this.toggleTheme()}></i>
                         </div>
                     </div>
 
-                    <div className="d-md-none d-flex">
-                        <button className="btn collapseBtn" onClick={() => this.toggleSlidebar()}>
-                            <i className="fa fa-align-justify" aria-hidden="true"></i>
-                        </button>
+                    <div className="d-flex flex-row w-100 justify-content-between d-flex d-md-none">
+                        <div className="d-flex align-self-start">
+                            <button className="btn collapseBtn" onClick={() => this.toggleSlidebar()}>
+                                <i className="fa fa-align-justify" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                        <div className="d-flex flex-column justify-content-center pe-3">
+                            <i aria-hidden="true"
+                               className={"fa theme-text-primary theme-btn-like " + (this.getTheme() === 'light' ? "fa-moon-o" : "fa-sun-o")}
+                               onClick={() => this.toggleTheme()}></i>
+                        </div>
                     </div>
                 </div>
 
@@ -113,7 +130,10 @@ class Menu extends React.Component {
                                             {link.icon}
                                         </div>
 
-                                        <span className="title" onClick={() => {link.onClick();this.toggleSlidebar()}}>
+                                        <span className="title" onClick={() => {
+                                            link.onClick();
+                                            this.toggleSlidebar()
+                                        }}>
                                             {link.title}
                                         </span>
                                     </div>

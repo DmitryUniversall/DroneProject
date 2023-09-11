@@ -1,34 +1,60 @@
-.nav {
+#GMenu {
+    /* light theme tokens */
+    --background-menu-light: 240, 240, 240;
+    --text-menu-light: 18, 18, 18;
+
+    /* dark theme tokens */
+    --background-menu-dark: 18, 18, 18;
+    --text-menu-dark: 255, 255, 255;
+
+    --rgb-background-menu: rgb(var(--background-menu));
+    --rgb-text-menu: rgb(var(--text-menu))
+}
+
+
+[data-theme='light'] #GMenu {
+    --background-menu: var(--background-menu-light);
+    --text-menu: var(--text-menu-light);
+}
+
+
+[data-theme='dark'] #GMenu {
+    --background-menu: var(--background-menu-dark);
+    --text-menu: var(--text-menu-dark);
+}
+
+
+#GMenu .nav {
     background-color: transparent;
     height: 3rem;
 }
 
-.nav-item {
-    cursor: pointer;
+#GMenu .nav-link:not(:hover):not(:active) {
+    color: var(--rgb-text-menu) !important;
 }
 
-.collapseBtn {
+#GMenu .collapseBtn {
     height: 3rem;
     width: 3rem;
-    color: white;
+    color: var(--rgb-text-menu);
     background-color: transparent;
     border: #8f8f8f !important;
 }
 
-.collapseBtn:hover {
-    color: #cccccc;
+#GMenu .collapseBtn:hover {
+    color: #cccccc !important;
 }
 
-.collapseBtn:active {
+#GMenu .collapseBtn:active {
     color: #858585 !important;
     border: none !important;
 }
 
-.collapseBtn:focus {
+#GMenu .collapseBtn:focus {
     border: none !important;
 }
 
-.slidebar {
+#GMenu .slidebar {
     padding-top: 3rem;
     position: fixed;
     top: -18rem;
@@ -39,32 +65,30 @@
     background: rgb(30, 30, 30);
 }
 
-
-.slidebar.open {
+#GMenu .slidebar.open {
     opacity: 1;
     top: 0;
 }
 
-
-.slidebar-item {
+#GMenu .slidebar-item {
     width: 100%;
     cursor: pointer;
 }
 
-.slidebar-item:not(:last-child) {
+#GMenu .slidebar-item:not(:last-child) {
     border-bottom: rgba(255, 255, 255, 0.3) 1px solid;
     padding-bottom: 1rem;
 }
 
-.slidebar-item:not(:first-child) {
+#GMenu .slidebar-item:not(:first-child) {
     padding-top: 1rem;
 }
 
-.slidebar-item .icon {
+#GMenu .slidebar-item .icon {
     border-right: rgba(255, 255, 255, 0.3) 1px solid;
     padding-right: 1rem;
 }
 
-.slidebar-item .title {
+#GMenu .slidebar-item .title {
     padding-left: 1rem;
 }

@@ -6,9 +6,6 @@ import React from "react";
 class MainLayoutContent extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-
-        }
 
         this.get_routes = this.props.get_routes
     }

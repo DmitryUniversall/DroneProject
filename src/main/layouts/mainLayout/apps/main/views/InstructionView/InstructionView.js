@@ -10,7 +10,6 @@ import {isInViewport, scrollTo} from "../../../../../../utils/scroll";
 class InstructionView extends BaseView {
     constructor(props) {
         super(props);
-
         let group = Object.keys(instruction)[0]
         let block = instruction[group][0].blockName
 
@@ -66,7 +65,7 @@ class InstructionView extends BaseView {
                         <Col lg={9}>
                             {
                                 Object.entries(instruction).map(([group, blocks]) =>
-                                    <div id={group} className="group">
+                                    <div id={group} className="group" key={group}>
                                         <div className="group_title">
                                             <h2>{group}</h2>
                                         </div>
@@ -107,7 +106,7 @@ class InstructionView extends BaseView {
                                 <div className="d-flex flex-column justify-content-start">
                                     {
                                         Object.entries(instruction).map(([group, blocks]) =>
-                                            <div>
+                                            <div key={Math.random()}>
                                                 <div
                                                     className={"nav_button group_button " + (this.state.activeGroup === group ? this.activeBlockClassName : "")}
                                                     onClick={() => scrollTo(group)}

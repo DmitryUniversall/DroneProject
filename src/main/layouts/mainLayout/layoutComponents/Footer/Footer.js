@@ -8,12 +8,12 @@ class Footer extends React.Component {
         return (
             <>
                 <footer>
-                    <Container>
+                    <Container className='pb-3'>
                         <Row>
                             <Col lg={12}>
                                 <ul className="social-links">
                                     <li>
-                                        <a href="https://github.com/">
+                                        <a href="https://github.com/DmitryMurashov">
                                             <i className="fa fa-github" aria-hidden="true"></i>
                                         </a>
                                     </li>
@@ -31,7 +31,7 @@ class Footer extends React.Component {
 
                                 <ul className="copyright">
                                     <li>&copy; Copyright 2023</li>
-                                    <li>
+                                    <li className="ms-1">
                                         Created by{" "}
                                         <a title="Styleshout" href="https://github.com/DmitryMurashov">
                                             Dmitry Universall

@@ -4,6 +4,7 @@ import WithRouterWrapper from "../../../../../core/generics/views/wrappers/WithR
 import InstructionView from "./views/InstructionView/InstructionView";
 import {Navigate} from "react-router-dom";
 import {pathSearch} from "../../../../../core/routing/path";
+import {WithThemeContextWrapper} from "../../../../../themes";
 
 
 const MainAppUrlPatterns = [
@@ -18,14 +19,18 @@ const MainAppUrlPatterns = [
         name: "indexBlock",
         path: "index/:blockName/",
         view: WithRouterWrapper(
-            IndexView
+            WithThemeContextWrapper(
+                IndexView
+            )
         )
     }),
     new UrlPattern({
         name: "instruction",
         path: "instruction/",
         view: WithRouterWrapper(
-            InstructionView
+            WithThemeContextWrapper(
+                InstructionView
+            )
         )
     })
 ]

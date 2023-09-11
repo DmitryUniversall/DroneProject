@@ -13,7 +13,7 @@ class ReviewSelection extends React.Component {
                     <Container>
                         <Row>
                             <Col lg={12}>
-                                <h1 className="text-center pb-3">
+                                <h1 className="text-center theme-text-primary pb-3">
                                     Помогите нам стать лучше
                                 </h1>
                             </Col>
@@ -21,11 +21,11 @@ class ReviewSelection extends React.Component {
 
                         <Row>
                             <Col lg={2}>
-                                <span className="msg-icon d-none d-lg-block"/>
+                                <span className="msg-icon d-none d-lg-block theme-text-secondary"/>
                             </Col>
 
                             <Col lg={10}>
-                                <p className="lead">
+                                <p className="fs-6 theme-text-secondary">
                                     Ваши отзывы необходимы для нас. Делясь своим опытом, вы можете помочь нам улучшить наш сервис. Независимо от того, был ли у вас положительный опыт или вы столкнулись с какими-то вещами, требующими улучшения, ваш честный отзыв поможет нам обеспечить превосходный сервис, а так же поможет потенциальным клиентам принимать решения. Ваши слова могут изменить ситуацию и сформировать будущее нашего сервиса.                                </p>
                             </Col>
                         </Row>
@@ -34,8 +34,9 @@ class ReviewSelection extends React.Component {
                             <Col lg={8}>
                                 <div className="d-flex flex-column gap-4">
                                     <div>
-                                        <label htmlFor="contactName">
-                                            Имя <span className="required">*</span>
+                                        <label htmlFor="contactName" className="theme-text-primary">
+                                            {/* TODO: '*' if field is blank */}
+                                            Имя <span className="theme-text-accent">*</span>
                                         </label>
                                         <input
                                             type="text"
@@ -48,8 +49,8 @@ class ReviewSelection extends React.Component {
                                     </div>
 
                                     <div>
-                                        <label htmlFor="contactEmail">
-                                            Email <span className="required">*</span>
+                                        <label htmlFor="contactEmail" className="theme-text-primary">
+                                            Email <span className="theme-text-accent">*</span>
                                         </label>
                                         <input
                                             type="text"
@@ -62,8 +63,8 @@ class ReviewSelection extends React.Component {
                                     </div>
 
                                     <div>
-                                        <label htmlFor="contactMessage">
-                                            Отзыв <span className="required">*</span>
+                                        <label htmlFor="contactMessage" className="theme-text-primary">
+                                            Отзыв <span className="theme-text-accent">*</span>
                                         </label>
                                         <textarea
                                             rows="15"
@@ -89,8 +90,8 @@ class ReviewSelection extends React.Component {
 
                             <Col lg={4} className="mt-4 mt-lg-0">
                                 <div>
-                                    <h4>Контактная информация:</h4>
-                                    <div className="d-flex flex-column gap-2 pb-4">
+                                    <h5 className="theme-text-primary">Контактная информация:</h5>
+                                    <div className="d-flex flex-column gap-2 pb-4 theme-text-secondary">
                                         <span>
                                             Email: test@gmail.com
                                         </span>
@@ -101,10 +102,10 @@ class ReviewSelection extends React.Component {
                                 </div>
 
                                 <div>
-                                    <h4 className="widget-title">
+                                    <h4 className="theme-text-primary">
                                         При написании отзыва, пожалуйста, соблюдайте следующие правила:
                                     </h4>
-                                    <ul>
+                                    <ul className="theme-text-secondary">
                                         <li>
                                             <span>
                                                 Будьте честны: делитесь своими мыслями. Честность имеет огромное значение как для нас, так и для будущих клиентов.

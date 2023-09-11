@@ -13,27 +13,25 @@ class InfoSelection extends React.Component {  // TODO: bars selection?
                         info.map((block) => (
                             <Row className="block" id={block.id} key={Math.random()}>
                                 <Col lg={3} className="header-col">
-                                    <div className="block-title">
-                                        <h1>
-                                            {block.title}
-                                        </h1>
-                                    </div>
+                                    <h1 className="block-title theme-gradient border-gradient gradient-blue to-right">
+                                        {block.title}
+                                    </h1>
                                 </Col>
 
                                 <Col lg={9} className="main-col mt-5 mt-lg-0">
                                     {
                                         block.themes.map((theme) => (
-                                            <Row className="theme" key={Math.random()}>
+                                            <Row className="theme-block" key={Math.random()}>
                                                 <Col lg={12}>
                                                     <h2>
                                                         {theme.title}
                                                     </h2>
-                                                    <div className="theme-texts">
+                                                    <div className="mt-2">
                                                         {
                                                             theme.texts.map((text) => (
                                                                 <div className="info-item" key={Math.random()}>
-                                                                    <div className="author-info">
-                                                                        {text.author_role}<span>&bull;</span>
+                                                                    <div className="author-info theme-text-accent">
+                                                                        {text.author_role}<i>&bull;</i>
                                                                         <em className="author">
                                                                             {text.author}
                                                                         </em>

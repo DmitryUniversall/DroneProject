@@ -1,97 +1,13 @@
-/* ------------------------------------------------------------------ */
-/* c. About Section
-/* ------------------------------------------------------------------ */
-
-#about {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    overflow: hidden;
-}
-
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #0762f9; }
-
-#about h2 {
-    font: 22px/30px 'opensans-bold', sans-serif;
-    color: #fff;
-    margin-bottom: 12px;
-}
 #about p {
     line-height: 30px;
-    color: #ccc;
 }
-#about .profile-pic {
-    position: relative;
+
+#about .picture {
     width: 120px;
     height: 120px;
     border-radius: 100%;
 }
-#about .contact-details { width: 41.66667%; }
-#about .download {
-    width: 58.33333%;
-    padding-top: 6px;
-}
-#about .main-col { padding-right: 5%; }
-#about .download .button {
-    margin-top: 6px;
-    background: #444;
-}
-#about .download .button:hover {
-    background: #fff;
-    color: #2B2B2B;
-}
-#about .download .button i {
-    margin-right: 15px;
-    font-size: 20px;
-}
 
-
-/* ------------------------------------------------------------------ */
-/* d. Resume Section
-/* ------------------------------------------------------------------ */
-
-#resume {
-    background: #fff;
-    padding-top: 90px;
-    padding-bottom: 72px;
-    overflow: hidden;
-}
-
-#resume a, #resume a:visited  { color: #0762f9; }
-#resume a:hover, #resume a:focus { color: #313131; }
-
-#resume h1 {
-    font: 18px/24px 'opensans-bold', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-#resume h1 span {
-    border-bottom: 3px solid #0762f9;
-    padding-bottom: 6px;
-}
-#resume h3 {
-    font: 25px/30px 'opensans-bold', sans-serif;
-}
-
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
-
-.education, .work {
-    margin-bottom: 48px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #E8E8E8;
-}
-#resume .author-info {
-    font: 16px/24px 'librebaskerville-italic', serif;
-    color: #6E7881;
-    margin-bottom: 18px;
-    margin-top: 9px;
-}
-#resume .author-info span {
-    margin-right: 5px;
-    margin-left: 5px;
-}
-#resume .date {
-    font: 15px/24px 'opensans-regular', sans-serif;
-    margin-top: 6px;
+#about .picture-block {
+    border-color: transparent !important;
 }

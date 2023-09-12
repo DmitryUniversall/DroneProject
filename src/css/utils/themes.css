@@ -1,0 +1,74 @@
+/* Colors */
+.theme-background-primary {
+    background-color: var(--rgb-background-primary) !important;
+}
+
+.theme-text-primary {
+    color: var(--rgb-text-primary) !important;
+}
+
+.theme-text-secondary {
+    color: var(--rgb-text-secondary) !important;
+}
+
+.theme-text-accent {
+    color: var(--rgb-accent) !important;
+}
+
+.theme-text-active {
+    color: var(--rgb-active) !important;
+}
+
+.theme-text-hover {
+    color: var(--rgb-hover) !important;
+}
+
+.theme-gradient {
+    --gradient-direction: none;
+    --gradient: none;
+}
+
+.theme-gradient.to-right {
+    --gradient-direction: to right;
+}
+
+.theme-gradient.to-left {
+    --gradient-direction: to left;
+}
+
+.theme-gradient.to-top {
+    --gradient-direction: to top;
+}
+
+.theme-gradient.to-bottom {
+    --gradient-direction: to bottom;
+}
+
+.theme-gradient.gradient-blue {
+    --gradient: var(--linear-gradient-blue);
+}
+
+.theme-gradient.border-gradient {
+    border-image: linear-gradient(var(--gradient-direction), var(--gradient)) !important;
+    border-image-slice: 1 !important;
+}
+
+.theme-gradient.text-gradient {
+    background: linear-gradient(var(--gradient-direction), var(--gradient)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Button-like text/link */
+.theme-btn-like {
+    cursor: pointer !important;
+    color: var(--rgb-text-primary) !important;
+}
+
+.theme-btn-like:hover {
+    color: var(--rgb-hover) !important;
+}
+
+.theme-btn-like:active {
+    color: var(--rgb-active) !important;
+}

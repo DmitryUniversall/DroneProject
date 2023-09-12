@@ -1,144 +1,108 @@
 let instruction = {
-    "Step 1": [
+    "Шаг 1: Сборка механической части": [
         {
             "blockName": "step1_substep1",
-            "title": "Gather Ingredients",
-            "description": "Before you begin, make sure you have all the ingredients you need for your cake. This typically includes flour, sugar, eggs, butter, baking powder, and flavorings like vanilla extract.",
+            "title": "Соберите раму квадрокоптера",
+            "description": "Распакуйте комплект рамы и убедитесь, что все необходимые детали присутствуют. С помощью подходящего инструмента начните сборку рамы, соединяя её элементы в соответствии с инструкцией. Убедитесь, что винты надежно закреплены и рама не имеет люфтов.",
             "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Gathering Ingredients"
+                "path": `${process.env.PUBLIC_URL}/media/instruction/drone.jpg`,
+                "alt": "Соберите раму квадрокоптера"
             }
         },
         {
             "blockName": "step1_substep2",
-            "title": "Preheat Oven",
-            "description": "Preheat your oven to the desired temperature, usually 350°F (180°C). This ensures that your cake bakes evenly.",
+            "title": "Установите и закрепите двигатели на раме",
+            "description": "Распакуйте моторы и прилагающиеся к ним крепления. Определите местоположение каждого мотора на раме и закрепите их. Убедитесь, что моторы надежно закреплены.",
             "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Preheating Oven"
-            }
-        },
-        {
-            "blockName": "step1_substep3",
-            "title": "Prepare Baking Pans",
-            "description": "Grease and flour your baking pans to prevent the cake from sticking. You can also line them with parchment paper for easier removal.",
-            "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Preparing Pans"
+                "path": `${process.env.PUBLIC_URL}/media/instruction/motors.jpg`,
+                "alt": "Установите и закрепите двигатели на раме"
             }
         },
         {
             "blockName": "step1_substep4",
-            "title": "Measure Ingredients",
-            "description": "Measure and sift your dry ingredients (flour, sugar, baking powder) and set them aside. Also, measure any liquid ingredients like milk or oil.",
+            "title": "Закрепите остальную электронику (аккумулятор, камеру и т.д.) на раме",
+            "description": "Используйте крепления, предусмотренные для каждого компонента, чтобы установить аккумулятор, камеру и другие устройства на раме. Обратите внимание на расположение и баланс компонентов, чтобы обеспечить стабильность в полете.",
             "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Measuring Ingredients"
+                "path": `${process.env.PUBLIC_URL}/media/instruction/battery.jpg`,
+                "alt": "Закрепите остальную электронику (аккумулятор, камеру и т.д.) на раме"
             }
-        }
+        },
     ],
-    "Step 2": [
+    "Шаг 2: Сборка электронной части": [
         {
             "blockName": "step2_substep1",
-            "title": "Cream Butter and Sugar",
-            "description": "In a mixing bowl, cream together the softened butter and sugar until the mixture is light and fluffy. This helps to aerate the cake.",
+            "title": "Подключите регуляторы скорости (ESC) к полётному контроллеру (Arduino UNO)",
+            "description": "Подключите каждый ESC к соответствующему порту на полётном контроллере, следуя инструкциям и схеме подключения.",
             "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Creaming Butter and Sugar"
+                "path": `${process.env.PUBLIC_URL}/media/instruction/speed_controllers.jpg`,
+                "alt": "Подключите регуляторы скорости (ESC) к полётному контроллеру (Arduino UNO)"
             }
         },
         {
             "blockName": "step2_substep2",
-            "title": "Add Eggs and Flavorings",
-            "description": "Add eggs one at a time, mixing well after each addition. Also, add any flavorings, such as vanilla extract, to the batter.",
+            "title": "Подключите приёмник к полётному контроллеру (Arduino UNO)",
+            "description": "Подключите выходы приёмника к соответствующим входам на полётном контроллере",
             "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Adding Eggs and Flavorings"
+                "path": `${process.env.PUBLIC_URL}/media/instruction/controller.jpg`,
+                "alt": "Подключите приёмник к полётному контроллеру (Arduino UNO)"
             }
         },
         {
             "blockName": "step2_substep3",
-            "title": "Alternate Dry and Wet Ingredients",
-            "description": "Gradually add the dry ingredients and any liquid ingredients to the batter, starting and ending with the dry ingredients. Mix until just combined.",
+            "title": `Подключите гироскоп MPU-6050 к полётному контроллеру (Arduino UNO)`,
+            "description": "Подключите пины гироскопа к соответствующим портам на полётном контроллере. Удостоверьтесь, что гироскоп правильно ориентирован и зафиксирован на квадрокоптере.",
             "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Mixing Ingredients"
+                "path": `${process.env.PUBLIC_URL}/media/instruction/gyroscope.jpg`,
+                "alt": "Подключите гироскоп MPU-6050 к полётному контроллеру (Arduino UNO)"
             }
         },
         {
-            "blockName": "step2_substep4",
-            "title": "Pour Batter into Pans",
-            "description": "Divide the cake batter evenly between the prepared baking pans. Use a spatula to smooth the tops for even baking.",
+            "blockName": "step1_substep3",
+            "title": "Спаяйте компоненты",
+            "description": "Обрежьте и подготовьте провода для двигателей, регуляторов скорости, аккумулятора и т.д. Припаяйте провода согласно схеме подключения. Изолируйте места пайки термоусадочной трубкой или изолентой.",
             "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Pouring Batter into Pans"
+                "path": `${process.env.PUBLIC_URL}/media/instruction/soldering_scheme.jpg`,
+                "alt": "Спаяйте компоненты"
             }
-        }
+        },
     ],
-    "Step 3": [
+    "Шаг 3: Настройка квадрокоптера": [
         {
             "blockName": "step3_substep1",
-            "title": "Bake the Cakes",
-            "description": "Place the pans in the preheated oven and bake for the recommended time, typically 25-30 minutes. Check for doneness with a toothpick; it should come out clean when inserted into the center of the cakes.",
+            "title": "Подключите полётный контроллер (Arduino UNO) к компьютеру и загрузите в него программу (прошивку)",
+            "description": "Используйте соответствующий программатор и программное обеспечение для загрузки прошивки на полётный контроллер. Убедитесь, что прошивка соответствует модели квадрокоптера и учитывает параметры компонентов.",
             "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Baking Cakes"
+                "path": "https://gitlab.com/uploads/-/system/project/avatar/22365943/1552998085_kofevarka-na-arduino-6.png",
+                "alt": "Подключите полётный контроллер (Arduino UNO) к компьютеру и загрузите в него программу (прошивку)"
             }
         },
         {
             "blockName": "step3_substep2",
-            "title": "Cool the Cakes",
-            "description": "Remove the cakes from the oven and let them cool in the pans for about 10 minutes. Then, carefully remove the cakes from the pans and place them on a wire rack to cool completely.",
+            "title": "Выполните настройку полётного контроллера",
+            "description": "Используйте конфигурационное программное обеспечение для полётного контроллера, чтобы настроить параметры, такие как калибровку гироскопа и акселерометра, настроить ошибки и др. Персонализируйте настройки для лучшей стабильности и управляемости квадрокоптера",
             "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Cooling Cakes"
-            }
-        },
-        {
-            "blockName": "step3_substep3",
-            "title": "Prepare Frosting",
-            "description": "While the cakes are cooling, prepare your choice of frosting. You can use buttercream, cream cheese frosting, or any other favorite frosting.",
-            "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Preparing Frosting"
-            }
-        },
-        {
-            "blockName": "step3_substep4",
-            "title": "Level and Frost the Cakes",
-            "description": "If needed, level the cakes by trimming any uneven tops. Then, spread a layer of frosting on top of one cake layer, place the second layer on top, and frost the entire cake.",
-            "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Frosting Cakes"
+                "path": "https://gitlab.com/uploads/-/system/project/avatar/22365943/1552998085_kofevarka-na-arduino-6.png",
+                "alt": "Выполните настройку полётного контроллера"
             }
         }
     ],
-    "Step 4": [
+    "Шаг 4: Тестирование и доработки": [
         {
             "blockName": "step4_substep1",
-            "title": "Decorate the Cake",
-            "description": "Get creative with decorating your cake! You can use piping techniques, edible decorations, or simply sprinkle some colorful sprinkles on top.",
+            "title": "Проверьте работу моторов, гироскопа и управления через приёмник",
+            "description": "Проверьте, как реагирует квадрокоптер на управление с радиоуправления. Запустите моторы и убедитесь, что они вращаются в правильном направлении и на правильной скорости. В случае необходимости, внесите коррекции в настройки полётного контроллера",
             "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Decorating Cake"
+                "path": "https://kinolet.com/wp-content/uploads/2019/07/yv-nmzjphs8.jpg",
+                "alt": "Проверьте работу моторов, гироскопа и управления через приёмник"
             }
         },
         {
             "blockName": "step4_substep2",
-            "title": "Serve and Enjoy",
-            "description": "Slice your beautifully baked cake and serve it to your family and friends. Enjoy your homemade cake!",
+            "title": "Проведите несколько тестовых полётов на низкой высоте",
+            "description": "Оцените, как квадрокоптер реагирует на разные маневры и т.д",
             "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Serving Cake"
-            }
-        },
-        {
-            "blockName": "step4_substep3",
-            "title": "Store Leftovers",
-            "description": "If there are any leftovers, store them in an airtight container at room temperature or in the refrigerator, depending on the type of frosting used.",
-            "image": {
-                "path": "https://dummyimage.com/600x400/fff/000",
-                "alt": "Storing Cake"
+                "path": "https://kinolet.com/wp-content/uploads/2019/07/yv-nmzjphs8.jpg",
+                "alt": "Проведите несколько тестовых полётов на низкой высоте"
             }
         }
     ]

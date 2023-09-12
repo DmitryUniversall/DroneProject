@@ -1,58 +1,77 @@
-.instruction {
-    background-color: #1e1e1e;
+#InstructionView {
+    /* light theme tokens */
+    --background-instruction-light: var(--background-primary);
+
+    /* dark theme tokens */
+    --background-instruction-dark: 30, 30, 30;
+
+    --rgb-background-instruction: rgb(var(--background-instruction));
+}
+
+
+[data-theme='light'] #InstructionView {
+    --background-instruction: var(--background-instruction-light);
+}
+
+
+[data-theme='dark'] #InstructionView {
+    --background-instruction: var(--background-instruction-dark);
+}
+
+
+#InstructionView .instruction {
+    background-color: var(--rgb-background-instruction);
     padding-bottom: 10rem;
     padding-top: 3rem;
 }
 
-.block {
+#InstructionView .block {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
 }
 
-.group {
+#InstructionView .group {}
 
-}
-
-.group .group_title {
+#InstructionView .group .group_title {
     text-align: center;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
-    border-top: 1px white solid;
-    border-bottom: 1px white solid;
+    border-top: 1px var(--rgb-text-primary) solid;
+    border-bottom: 1px var(--rgb-text-primary) solid;
 }
 
-.step_text {
+#InstructionView .step_text {
     font-size: 1.1rem;
 }
 
-.content_nav {
-    color: white;
+#InstructionView .content_nav {
+    color: var(--rgb-text-primary);
     position: fixed;
 }
 
-.content_nav .nav_button {
+#InstructionView .content_nav .nav_button {
     cursor: pointer;
     padding-left: 1rem;
     border-left: 2px transparent solid;
 }
 
-.content_nav .nav_button.active {
-    border-left: 2px white solid;
+#InstructionView .content_nav .nav_button.active {
+    border-left: 2px var(--rgb-text-primary) solid;
 }
 
-.content_nav .nav_button:not(.active):hover {
+#InstructionView .content_nav .nav_button:not(.active):hover {
     border-left: 2px #b2b2b2 solid;
 }
 
-.content_nav .nav_button.group_button {
+#InstructionView .content_nav .nav_button.group_button {
     font-size: 1.2rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
 }
 
-.content_nav .nav_button.block_button {
+#InstructionView .content_nav .nav_button.block_button {
     margin-left: 1rem;
     font-size: 1rem;
     padding-top: 0.1rem;

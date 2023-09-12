@@ -4,7 +4,7 @@ import {Col, Container, Row} from "reactstrap";
 import info from "./info";
 
 
-class InfoSelection extends React.Component {  // TODO: bars selection?
+class InfoSelection extends React.Component {
     render() {
         return (
             <section id="InfoSelection">

@@ -18,7 +18,7 @@ class Menu extends React.Component {
     }
 
     setOpacity() {
-        let opacity = (window.scrollY / 4) / 100
+        let opacity = (window.scrollY / 2) / 100
         if (opacity > 1) {
             opacity = 1
         }

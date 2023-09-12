@@ -107,7 +107,7 @@ class Menu extends React.Component {
 
                     <div className="d-flex flex-row w-100 justify-content-between d-flex d-md-none">
                         <div className="d-flex align-self-start">
-                            <button className="btn collapseBtn" onClick={() => this.toggleSlidebar()}>
+                            <button className="theme-btn-like collapseBtn" onClick={() => this.toggleSlidebar()}>
                                 <i className="fa fa-align-justify" aria-hidden="true"></i>
                             </button>
                         </div>
@@ -124,7 +124,7 @@ class Menu extends React.Component {
                     <div className="p-3 w-100">
                         {
                             this.getLinks().map((link) => (
-                                <div className="slidebar-item" key={Math.random()}>
+                                <div className="slidebar-item theme-btn-like" key={Math.random()}>
                                     <div className="d-flex flex-row no-select">
                                         <div className="icon">
                                             {link.icon}

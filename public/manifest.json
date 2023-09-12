@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Drone",
+  "short_name": "Дрона-конструктор",
+  "name": "Конструктор для создания дрона",
   "icons": [
     {
       "src": "favicon.ico",
